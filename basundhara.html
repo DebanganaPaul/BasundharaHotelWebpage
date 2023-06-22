@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>hotelbasundhara.in</title>
+<style>
+div.stick {
+  position: -webkit-sticky;
+  position: sticky;
+  top:150px;
+  background-color:yellow;
+  font-size: 15px;
+  transform:rotate(270deg);
+  float:right;
+  z-index:1;
+}
+
+ul.myul1{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:white;
+}
+li
+{
+float:left;
+}
+li a{
+display:block;
+color:black;
+text-align:right;
+padding:16px 16px;
+text-decoration:none;
+}
+.new{
+float:right;
+}
+div.new1
+{
+text-align:center;
+}
+ul.myul2{
+color:#18066d;
+display:inline-block;
+text-align:left;
+}
+.new2
+{
+background-color:#18066d;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: red;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+font-size: 11px;
+color:red;
+}
+}
+
+.grid-container
+{
+display:grid;
+grid-template-columns:auto auto;
+background-color:#d2d4d5;
+padding:0;
+}
+.grid-item{
+border:1px solid #7b858a;
+padding:30px;
+font-size:20px;
+text-align:center;
+}
+.grid-item:hover,.grid-item:focus
+{
+background-color:#18066d;
+}
+.mid
+{
+background-color:#a1aaae;
+text-align:center;
+}
+.myDIV{
+position:relative;
+}
+.my1{
+position:relative;
+}
+.my2{
+position:absolute;
+left:450px;
+top:140px;
+}
+.my3{
+position:absolute;
+border:2px solid black;
+right:280px;
+top:260px;
+padding:1px;
+transform:translate(50px,100px);
+}
+
+
+.gallery
+{
+display:grid;
+grid-template-columns:auto auto auto;
+background-color:black;
+}
+.grid-item1{
+border:1px solid black;
+padding:1px;
+font-size:20px;
+text-align:center;
+}
+.services{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.s1{
+  position: absolute;
+  top: 10%;
+  left:48%;
+  transform: translate(-50%, -50%);
+  color:yellow;
+}
+.serve{
+position:absolute;
+top:20%;
+left:35%;
+display:grid;
+grid-template-columns:auto;
+background-color:#cfcdcd;
+}
+.serve1{
+border:1px solid #cfcdcd;
+padding:5px;
+text-align:left;
+}
+div.serve{
+  background: url(klematis.jpg) repeat;
+}
+
+div.serve1 {
+  margin:1px;
+  background-color: #191919;
+  border: 1px solid black;
+  opacity: 0.6;
+  font-weight:bold;
+}
+.serve1:hover{
+background-color:#ffffff;
+color:#14274b;
+opacity:0.6;
+}
+.room
+{
+display:grid;
+grid-template-columns:auto auto;
+grid-column-gap:500px;
+grid-row-gap:50px;
+width:10px;
+height:10px;
+}
+.r1{
+position:relative;
+padding:1px;
+font-size:10px;
+text-align:center;
+border:1px solid #ebebeb;
+}
+.r2{
+position:absolute;
+font-size:15px;
+}
+
+/*-----Visitors review-----*/
+
+.mySlides1 {display: none;}
+.visit {
+  position: relative;
+  margin: auto;
+  background-color:#cacbcd;
+}
+.dot1 {
+  height: 25px;
+  width: 25px;
+  margin: 1px 4px;
+  background-color:yellow;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;  
+}
+.active1 {
+  background-color: green;
+}
+
+.visit1::after{
+content:"";
+clear:both;
+display:table;
+}
+.visit2{
+float:right;
+width:30px;
+padding:5px;
+position:absolute;
+top:200px;
+right:20px;
+}
+.visit1{
+display:grid;
+grid-template-columns:auto auto;
+column-gap:100px;
+}
+.visit31{
+position:relative;
+}
+.visit311{
+position:absolute;
+top:40px;
+left:330px;
+}
+
+/*end portion*/
+
+.end1{
+position:absolute;
+top:5700px;
+left:250px;
+text-align:center;
+display:grid;
+grid-template-columns:auto auto;
+background-color:#cfcdcd;
+grid-column-gap:10px;
+}
+.end11{
+border:1px solid #cfcdcd;
+padding:15px;
+text-align:left;
+font-size:25px;
+}
+div.end1{
+  background: url(klematis.jpg) repeat;
+}
+
+div.end11 {
+  margin:1px;
+  background-color: #191919;
+  border: 1px solid black;
+  opacity: 0.6;
+  font-weight:bold;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color:#191919;
+}
+input[type=tel], select {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color:#191919;
+}
+input[type=email], select {
+  width: 100%;
+  display:inline-block;
+  padding: 5px 10px;
+  margin: 2px 0;
+  border: 1px solid white;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color:#191919;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #191919;
+  color: yellow;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid yellow;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.end11{
+line-height:0.8;
+}
+
+</style>
+</head>
+<body>
+<div class="stick">
+<h2>Book Now</h2>
+</div>
+
+<div class="new">
+<ul class="myul1">
+<li><a href ="#inf"><img src="C:\Users\ACER\Downloads\211660_email_icon.png" height=25></a></li>
+<li><a href="#info">info@hotelbasundhara.com</a></li>
+<li><a href="#info1"><img src="C:\Users\ACER\Downloads\phone.png"></a></li>
+<li><a href="#mob1">+91-9434567892</a></li>
+<li><a href="#info2"><img src="C:\Users\ACER\Downloads\phone.png"></a></li>
+<li><a href="#mob2">+91-9435567892</a></li>
+<li style="background-color:yellow;"><a href="booking.html">BOOK NOW</a></li>
+</ul>
+</div>
+<br></br>
+<div class="new2">
+<h1><span style="color:white;">HOTEL </span><span style="color:yellow;">BASUNDHARA</span></h1>
+<h3 style="color:yellow;">A PREMIUM GUEST HOUSE</h3>
+<div class="new1">
+<ul class="myul2"> 
+<li><a href="booking.html"><span style="color:white;">BOOK NOW</span></a></li>
+<li><a href="#gallery"><span style="color:white;">GALLERY</span></a></li>
+<li><a href="#rooms"><span style="color:white;">ROOMS</span></a></li>
+<li><a href="#contact"><span style="color:white;">CONTACT US</span></a></li>
+<li><a href="payment.html"><span style="color:white;">PAY NOW</span></a></li>
+</ul></div>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="C:\Users\ACER\Downloads\francesca-saraco-_dS27XGgRyQ-unsplash.jpg" style="width:100%">
+  <div class="text">Welcome to our Hotel</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="C:\Users\ACER\Downloads\cafe-terrace-with-turquoise-sofas-yellow-pillows.jpg" style="width:100%">
+  <div class="text">Enjoy your vacation in our luxuries..</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="C:\Users\ACER\Downloads\luxury-hotel-lounge-with-windows-overlooking-city-singapore_73503-885.jpg" style="width:100%">
+  <div class="text">Enjoy Bengali Food with friends and Families</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<h3 style="text-align:center;">EXPERIENCE A GOOD STAY,ENJOY</h3>
+<h3 style="text-align:center;">FANTASTIC OFFERS</h3>
+<h4 style="text-align:center; color:yellow;">FIND OUR FRIENDLY WELCOMING RECEPTION</h4>
+
+<div class="grid-container">
+<div class="grid-item">
+<img src="C:\Users\\ACER\Downloads\bed.png" height="25" width="25">
+<hr style="height:10px; width:50%;background-color:yellow">
+<p>MASTER BEDROOMS</p>
+<small style="color:yellow;">HOTEL BASUNDHARA</small>
+</div>
+<div class="grid-item">
+<img src="C:\Users\ACER\Downloads\linear-lawn-icon-agriculture-farming-gardening-outline-collection-thin-line-vector-isolated-white-background-trendy-140046244.jpg" height="30" width="30">
+<hr style="height:10px; width:50%;background-color:yellow">
+<p>OPEN LAWN</p>
+<small style="color:yellow;">HOTEL BASUNDHARA</small>
+</div>
+<div class="grid-item">
+<img src="C:\Users\ACER\Downloads\cafeteria-diner-vector-signs-coffee-cup-smoke-fork-knife-plate-icon-symbols-restaurant-cafe-icons-cafeteria-123781463.jpg" height="30" width="30">
+<hr style="height:10px; width:50%;background-color:yellow">
+<p>CAFE & RESTURANT</p>
+<small style="color:yellow;">HOTEL BASUNDHARA</small>
+</div>
+<div class="grid-item">
+<img src="C:\Users\ACER\Downloads\88014.png" height="25" width="25">
+<hr style="height:10px; width:50%;background-color:yellow">
+<p>WIFI COVERAGE</p>
+<small style="color:yellow;">HOTEL BASUNDHARA</small>
+</div>
+</div>
+<div class="mid">
+<h1>About Our Hotel Basumati</h1>
+<p>We are a group of business with decades of experience in Customer Service. Welcome to our lodging facilities at Bolpur-Santiniketan, Jambuni , Simantapalli. Fully equipped AC conference hall is available with modern facilities and amenities. The meeting room provides you with everything you need for making your meeting an exclusive one.The meeting room provides you with everything you need for making....</p>
+
+<div class="myDIV">
+<div class="my1"><img src="C:\Users\ACER\OneDrive\Desktop\download.jpg"width="700"></div>
+<div class="my2"><img src="C:\Users\ACER\OneDrive\Desktop\download (1).jpg" width="450"></div>
+<div class="my3" style="background-color:#75668b;">
+<div class="my4"><h2 style="color:yellow;">You'll love All Amenities We Offer!</h2></div>
+<hr style="color:black;"></hr>
+<div>Service to our best</div>
+</div>
+</div>
+</div>
+<br></br>
+<br></br>
+<br></br>
+
+<div class="services">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\WhatsApp Image 2023-06-19 at 09.04.55.jpeg">
+<div class="s1"><h1>Our Services</h1></div>
+
+<div class="serve">
+<div class="serve1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\26690015-0880-4355-b9ee-054e7702db52.jpg" style="margin-left:auto; margin-right:auto;display:block;"width="40px"height="40px">
+<h2 style="text-align:center;">Stay First,Pay First</h2>
+<h4>We provide service all round</h4>
+<h4>~Decorated room,proper air conditioned</h4>
+<h4>~Open balcony</h4> 
+</div>
+<div class="serve1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\c5795497-3e0e-4f74-af92-82c767300e5b.jpg"style="margin-left:auto; margin-right:auto;display:block;"width="40px"height="40px">
+<h2 style="text-align:center;">Resturant</h2>
+<h4>Good Food is our main motto of all time</h4>
+<h4>~Room service</h4>
+<h4>~24-hour cold & hot water service</h4> 
+</div>
+</div>
+</div>
+
+<br></br>
+<br></br>
+<h1 style="text-align:center;">Our Gallery</h1>
+<div class="gallery">
+<div class="grid-item1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\2d065b11-187b-4d34-b52c-8c0fbe65a2f3.jpg"width="500px"height="200px">
+</div>
+<div class="grid-item1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\bb60c863-ac51-4c02-882d-d83d84d54c64.jpg"width="500px"height="200px">
+</div>
+<div class="grid-item1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\7ed474e9-fb58-488c-8f1f-10ce7ca13131.jpg"width="500px"height="200px">
+</div>
+<div class="grid-item1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\cfd4c8dd-2e70-40ad-942f-1e8e2465a538.jpg"width="500px"height="200px">
+</div>
+<div class="grid-item1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\d70f8357-31a5-42ee-a67e-0174a857576a.jpg"width="500px"height="200px">
+</div>
+<div class="grid-item1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\b6bb3a99-7c88-4f48-a445-83906dde12bb.jpg"width="500px"height="200px">
+</div>
+<div class="grid-item1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\99554fec-e47a-4278-a93c-bff0c7ea4df0.jpg"width="500px"height="200px">
+</div>
+<div class="grid-item1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\555959d6-bec0-4dc0-a6a1-444ccf195c9e.jpg"width="500px"height="200px">
+</div>
+<div class="grid-item1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\adff1322-81c2-4953-b5b8-5ccaa1e282bf.jpg"width="500px"height="200px">
+</div>
+</div>
+
+
+<br></br>
+<br></br>
+<h1 style="text-align:center;">Rooms</h1>
+<div class="room">
+<div class="r1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\282b145b-9aa7-4aa9-9457-3be6c565d751.jpg"width="400px"height="300px">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\e51df42e-3960-4811-b69a-7ca1a9db0766.jpg"width="100px"height="70px">
+<div class="r2" style="background-color:#18066d;top:352px;left:250px;"><h3 style="color:white;">AC Deluxe Room</h3></div>
+</div>
+<div class="r1">
+  <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\9cd82d18-45d0-47e8-919c-8740d11309ed.jpg"width="400px"height="300px">
+  <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\abf640aa-a298-4bf5-b62f-dc01f92a1799.jpg"width="100px"height="70px">
+  <div class="r2" style="background-color:#18066d;top:330px;left:310px;"><h3 style="color:white;">AC Room & single bed</h3></div>
+  </div>
+<div class="r1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\1750cd27-2745-487a-89c8-3a82dfef5e27.jpg"width="400px"height="300px">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\c41b2843-4cd1-402c-a3b1-f6cb1bc45e79.jpg"width="150px"height="100px">
+<div class="r2" style="background-color:#18066d;top:370px;left:250px;"><h3 style="color:white;">Beautiful Lawn</h3></div>
+</div>
+
+<div class="r1">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\6dbbd4fc-ef91-4306-b136-3e848ff920e9.jpg"width="400px"height="300px">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\6681309c-6e8e-4227-88b9-352835e5572a.jpg"width="100px"height="70px">
+<div class="r2" style="background-color:#18066d;top:330px;left:290px;"><h3 style="color:white;">Good food</h3></div>
+</div>
+</div>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<div class="visit">
+<h1 style="text-align:center;color:#1d45e6">What Our Visitors Experienced</h1>
+<div class="mySlides1 fade1">
+ <div class="visit1">
+   <div class="visit31">
+   <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\99554fec-e47a-4278-a93c-bff0c7ea4df0.jpg"width="400px"height="300px">
+	<div class="visit311">
+        <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\5.jpg"width="200px"height="200px">
+	</div>
+   </div>
+   <div class="visit32">
+   <h2><img src="C:\Users\ACER\OneDrive\Desktop\htmlall\3cabf0c4-7004-4480-a086-0f216d61130e.jpg"width="184px"height="50px"><span style="color:white;"> Worth to Come Again</span></h2>
+   <h3> Best Hotel for family outing.</h3>
+   <h3 class="v" style="color:blue;">~Lina Gupta</h3>
+   <h4 class="v" style="color:yellow;">Delhi</h3>
+   </div>
+ </div>
+</div>
+<div class="mySlides1 fade1">
+ <div class="visit1">
+   <div class="visit31">
+   <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\99554fec-e47a-4278-a93c-bff0c7ea4df0.jpg"width="400px"height="300px">
+	<div class="visit311">
+        <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\6.jpg"width="200px"height="200px">
+	</div>
+   </div>
+   <div class="visit32">
+   <h2><img src="C:\Users\ACER\OneDrive\Desktop\htmlall\c41b2843-4cd1-402c-a3b1-f6cb1bc45e79.jpg"><span style="color:white;"> Worth to Come Again</span></h2>
+   <h3>The ambience of the hotel is perfect.Great Experience.</h3>
+   <h3 class="v" style="color:blue;">~Kishan Biswas</h3>
+   <h4 class="v" style="color:yellow;">Kolkata</h3>
+   </div>
+ </div>
+</div>
+<div class="mySlides1 fade1">
+  <div class="visit1">
+   <div class="visit31">
+   <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\99554fec-e47a-4278-a93c-bff0c7ea4df0.jpg"width="400px"height="300px">
+	<div class="visit311">
+        <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\4.jpg"width="200px"height="200px">
+	</div>
+   </div>
+   <div class="visit32">
+   <h2><img src="C:\Users\ACER\OneDrive\Desktop\htmlall\c41b2843-4cd1-402c-a3b1-f6cb1bc45e79.jpg"><span style="color:white;"> Worth to Come Again</span></h2>
+   <h3>Perfect place for family tour.</h3>
+   <h3 class="v" style="color:blue;">~Emli Hossain</h3>
+   <h4 class="v" style="color:yellow;">Mumbai</h3>
+   </div>
+ </div>
+</div>
+<div class="mySlides1 fade1">
+  <div class="visit1">
+   <div class="visit31">
+   <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\99554fec-e47a-4278-a93c-bff0c7ea4df0.jpg"width="400px"height="300px">
+	<div class="visit311">
+        <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\2.jpg"width="200px"height="200px">
+	</div>
+   </div>
+   <div class="visit32">
+   <h2><img src="C:\Users\ACER\OneDrive\Desktop\htmlall\6681309c-6e8e-4227-88b9-352835e5572a.jpg"width="184px"height="50px"> <span style="color:white;">Worth to Come Again</span></h2>
+   <h3>Great Hotel. Great Ambience.</h3>
+   <h3 class="v" style="color:blue;">~Suresh Dixit</h3>
+   <h4 class="v" style="color:yellow;">Patna</h3>
+   </div>
+ </div>
+</div>
+<div class="visit2" style="text-align:center;">
+  <span class="dot1">1</span> 
+  <span class="dot1">2</span> 
+  <span class="dot1">3</span>
+  <span class="dot1">4</span>
+</div>
+</div>
+<script>
+let slideIndex1 = 0;
+showSlides1();
+
+function showSlides1() {
+  let i1;
+  let slides1 = document.getElementsByClassName("mySlides1");
+  let dots1 = document.getElementsByClassName("dot1");
+  for (i1 = 0; i1 < slides1.length; i1++) {
+    slides1[i1].style.display = "none";  
+  }
+  slideIndex1++;
+  if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+  for (i1 = 0; i1 < dots1.length; i1++) {
+    dots1[i1].className = dots1[i1].className.replace(" active1", "");
+  }
+  slides1[slideIndex1-1].style.display = "block";  
+  dots1[slideIndex1-1].className += " active1";
+  setTimeout(showSlides1, 2000); // Change image every 2 seconds
+}
+</script>
+
+<br><br>
+<div class="end">
+<img src="C:\Users\ACER\OneDrive\Desktop\htmlall\65be6198-82ac-45b3-bc18-782a21ea3ae1.jpg"width=100%>
+   <div class="end1">
+	<div class="end11">
+            <h2 style="color:white;text-align:center;">Contact Us</h2>
+	    <p style="color:yellow;text-align:center;">Sign up for our News Letters</p>
+	    <form action="/action_page.php">
+	    <label for="fname"><span style="color:white;">Full Name:</span></label>
+	    <br>
+	    <input type="text" id="fname" name="fname"><br>
+	    <label for="phone"><span style="color:white;">Phone Number:</span></label>
+	    <br>
+	    <input type="tel" id="phone" name="phone"><br>
+            <label for="email"><span style="color:white;">Email Address:</span></label>
+	    <br>
+	    <input type="email" id="email" name="email"><br>	    
+	    <input type="submit" value="Send">
+	</div>
+        <div class="end11">
+            <h2 style="color:white;text-align:center;">Connect With Us</h2>
+	    <p><span style="color:yellow;">Phone:</span><span style="color:white;"> +91-9876543213</span></p>
+	    <p><span style="color:yellow;">Email:</span><span style="color:white;">info@hotelbasundhara.com</span></p>
+	    <p><span style="color:yellow;">Address:</span><span style="color:white;">Saratpally,Santiniketan</span></p>
+	    <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\60de0f46-2fbd-491e-9be5-292c859ced49.jpg"width="40px"height="40px"> <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\c0ab275e-a3ec-409d-8642-af65292740c9.jpg"width="40px"height="40px"> <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\7e98cb5d-c58c-4f7b-9399-9be758576459.jpg"width="40px"height="40px"> <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\5acff623-2a35-4097-b4bd-bc94eaec260a.jpg"width="40px"height="40px"><br><br>
+      <img src="C:\Users\ACER\OneDrive\Desktop\htmlall\9a08d550-e1b0-416c-9684-e83515bdbc0d.jpg" width="300px"height="300px"style="text-align:center;">
+	    
+        </div>
+   </div>	
+</div>
+<footer style="background-color:blue;padding:1px;">
+<p style="text-align:center;color:white;">@2023 Hotel Basundhara. All Rights Resesrved | Design by Debangana</p> 
+</footer>
+</body>
+</html>
